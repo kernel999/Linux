@@ -1,0 +1,26 @@
+Logs for the HELLOWORLD kernel driver and PROC file creation:
+
+1) sudo insmod hello.ko
+             inserts the helloworld kernel
+
+2) sudo modinfo hello.ko
+             displays info about the kernel inserted
+
+
+3) sudo dmesg
+             displays printk message
+4) sudo rmmod hello.ko
+             removes helloworld kernel (prints mesasge goodbye)
+
+
+Create Proc file and compile
+
+
+5) sudo insmod hello.ko
+       --creates proc file under /proc (mydrive)
+
+	
+
+6) dmesg | tail -2
+                displays printk messages
+
